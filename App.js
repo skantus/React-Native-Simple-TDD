@@ -1,6 +1,7 @@
 import React from 'react'
 import { Counter } from './src/components/Counter/Counter'
 import { ProductList } from './src/components/Products/ProductList/ProductList'
+import { Login } from './src/components/Login/Login'
 
 export default class App extends React.Component {
 
@@ -18,7 +19,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <ProductList products={this.state.products}/>
+      <Login/>
     );
   }
 }

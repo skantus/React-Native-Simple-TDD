@@ -18,6 +18,6 @@ beforeEach(() => {
   wrapper = shallow(<ProductList products={mockProducts}/>);
 });
 
-it('it should render 1 view component', () => {
+it('it should render 1 view ProductList', () => {
   expect(wrapper.find(View)).to.have.length(1);
 });
