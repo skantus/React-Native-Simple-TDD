@@ -1,8 +1,9 @@
 import React from 'react'
-import { View, Text, TouchableHighlight } from 'react-native';
-import { configure, shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import { View, Text, TouchableHighlight } from 'react-native'
+import { configure, shallow } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
 import { expect } from 'chai'
+import sinon from 'sinon'
 
 import { Login } from './Login'
 
@@ -18,6 +19,6 @@ it('Login button testID should be loginButton', () => {
   expect(wrapper.find(TouchableHighlight).props().testID).equal('loginButton');
 })
 
-it('it should display username & password when is pressed', () => {
-  wrapper.find(TouchableHighlight).simulate('press');
-})
+it('simulates press events', () => {
+  wrapper.find(TouchableHighlight).simulate('press')
+});

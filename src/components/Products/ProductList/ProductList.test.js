@@ -5,6 +5,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import { expect } from 'chai'
 
 import { ProductList } from './ProductList'
+import { ProductItem } from '../ProductItem/ProductItem'
 
 configure({ adapter: new Adapter() });
 
@@ -20,4 +21,8 @@ beforeEach(() => {
 
 it('it should render 1 view ProductList', () => {
   expect(wrapper.find(View)).to.have.length(1);
+});
+
+it('it should render ProductItem component', () => {
+  expect(wrapper.find(ProductItem)).to.have.length(0);
 });

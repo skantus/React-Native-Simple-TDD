@@ -19,7 +19,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <Login/>
+      <ProductList products={this.state.products}/>
     );
   }
 }
